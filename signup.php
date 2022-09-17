@@ -65,17 +65,17 @@ if ($action == "login") {
 </head>
 
 <body>
-    <div id="login">
+    <div id="signup">
         <div class="container">
             <?php if ($errorMsg != "") { ?>
-                <div class="alert alert-danger" id="login-err-msg">
+                <div class="alert alert-danger" id="signup-err-msg">
                     <?= $errorMsg ?>
                 </div>
             <?php } ?>
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="" method="post">
+            <div id="signup-row" class="row justify-content-center align-items-center">
+                <div id="signup-column" class="col-md-6">
+                    <div id="signup-box" class="col-md-12">
+                        <form id="signup-form" class="form" action="" method="post">
                             <h3 class="text-center text-info">SignUp</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
