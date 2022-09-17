@@ -21,18 +21,6 @@ if ($action == "login") {
     if ($password == "") {
         $errorMsg .= "&bull; Vui lòng nhập Password.<br />";
     }
-
-    // Nếu có đủ dữ liệu POST thì xác thực
-    if ($errorMsg == "") {
-        if ($username == "admin" && $password == "admin@2021") {
-            // Success
-            // echo "Success";
-            $_SESSION["logged"] = 1;
-            header("Location: themmoi.php");
-        } else {
-            $errorMsg .= "&bull; Thông tin đăng nhập không đúng. Vui lòng thử lại.<br />";
-        }
-    }
 }
 ?>
 <!DOCTYPE html>
