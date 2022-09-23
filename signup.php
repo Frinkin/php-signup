@@ -21,6 +21,9 @@ if ($action == "login") {
     if ($password == "") {
         $errorMsg .= "&bull; Vui lòng nhập Password.<br />";
     }
+    if ($password2 == "") {
+        $errorMsg .= "&bull; Vui lòng nhập lại Password.<br />";
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -41,22 +44,22 @@ if ($action == "login") {
             height: 100vh;
         }
 
-        #login .container #login-row #login-column #login-box {
+        #signup .container #signup-row #signup-column #signup-box {
             margin-top: 30px;
             max-width: 600px;
             border: 1px solid #9C9C9C;
             background-color: #EAEAEA;
         }
 
-        #login .container #login-row #login-column #login-box #login-form {
+        #signup .container #signup-row #signup-column #signup-box #signup-form {
             padding: 20px;
         }
 
-        #login .container #login-row #login-column #login-box #login-form #register-link {
+        #signup .container #signup-row #signup-column #signup-box #signup-form #register-link {
             margin-top: -85px;
         }
 
-        #login-err-msg {
+        #signup-err-msg {
             width: 540px;
             margin: 30px auto;
         }
